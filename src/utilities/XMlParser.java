@@ -313,14 +313,14 @@ public class XMlParser
 			} else
 			{
 				System.err.println("* extrasQ is not empty. errorQ is not empty. And mismatch.");
-				System.err.println("-- errorQ is");
+				System.err.println("---- errorQ is");
 				while (errorQ.peek() != null)
 				{
 					System.err.print(errorQ.dequeue());
 				}
 
 				System.err.println("\n");
-				System.err.println("-- extrasQ is");
+				System.err.println("---- extrasQ is");
 				while (extrasQ.peek() != null)
 				{
 					System.err.print(extrasQ.dequeue());
