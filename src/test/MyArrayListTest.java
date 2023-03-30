@@ -135,15 +135,27 @@ class MyArrayListTest
 	@Test
 	void testToArrayE()
 	{
-		// System.out.println("in testToArrayE");
-//		myArrayList.clear();
-//		myArrayList.add("1");
-//		myArrayList.add("2");
-//		myArrayList.add("3");
-////
-//		Object[] myTestE = new Object[];
-//		assertEquals(true, myArrayList.toArray(myTestE));
+		System.out.println("in testToArrayE");
+		myArrayList.clear();
+		myArrayList.add("1");
+		myArrayList.add("2");
+		myArrayList.add("3");
+
+		String[] myTestE = new String[myArrayList.size()];
+		try
+		{myTestE = myArrayList.toArray(myTestE);
+		System.out.println(myArrayList.size());
+			
+		} catch (Exception e)
+		{
+			// TODO: handle exception
+			System.out.println(e.getMessage());
+		}
+		
+
+		// assertEquals(true,);
 //		assertEquals(false, myArrayList.contains("4"));
+
 	}
 
 	@Test

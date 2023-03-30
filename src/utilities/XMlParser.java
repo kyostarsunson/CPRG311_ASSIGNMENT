@@ -16,7 +16,7 @@ import exceptions.EmptyQueueException;
  * 
  * @description:
  */
-public class xMlParser
+public class XMlParser
 {
 
 	/**

@@ -360,8 +360,11 @@ public class MyArrayList<E> implements ListADT<E>
 	public E[] toArray(E[] toHold) throws NullPointerException
 	{
 		// TODO Auto-generated method stub
-		toHold = (E[]) contend;
-		return toHold;
+		Object[] returnArray = new Object[this.maxCnt];
+
+		for (int i = 0; i < this.maxCnt; i++)
+			returnArray[i] = contend[i];
+		return (E[]) returnArray;
 	}
 
 	/**
