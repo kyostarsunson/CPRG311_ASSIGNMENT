@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import utilities.MyQueue;
 
-class myQueueTests
+class MyQueueTests
 {
 	private MyQueue<String> myQueue;
 
